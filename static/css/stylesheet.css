@@ -17,7 +17,12 @@ body{
     z-index: 999999;
     
 }
-
+.text-green{
+    color: #00aa55;
+}
+.text-gray{
+    color: rgb(133, 128, 128);
+}
 .header{
     width: 94%;
     margin-left: 3%;
@@ -55,10 +60,20 @@ margin-top:-160px
 .para{
     padding-top:15px
 }
+.icon{
+    font-size: 40px;
+    font-weight: 400;
+    padding-top: 35px ;
+    text-align: center;
+}
 .card{
     width:80%;
     border:none;
     outline: none;
+    text-align: center;
+    background-color: #00aa55 !important;
+    color: white;
+    font-size: 14px;
 }
 .cards-grid{
     display: grid;
@@ -76,6 +91,48 @@ margin-top:-160px
 .carousel-indicators{
     padding-bottom: 40px !important;
 }
+.missions{
+    display: flex;
+    width:100%;
+}
+.mission-left{
+    width:50%;
+    padding: 50px;
+    padding-left: 80px
+}
+.mission-left ol li {
+    color: #00aa55;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.mission-left ol li span{
+    color : black
+}
+.mission-right{
+    width:50%;
+    margin-top: 50px;
+    position: relative;
+}
+.allison-photo{
+    width: 85%;
+     margin-top: 7% ;
+}
+.green-box{
+    position: absolute;
+    right: 120px;
+    top:40px;
+    width: 80%;
+}
+.learn-more-btn{
+    height: 50px;
+    width:180px;
+    border:none;
+    margin-top:40px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+}
 @media (max-width:1000px)
 {
     .header{
@@ -90,7 +147,9 @@ margin-top:-160px
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 10px;
     }
-    
+    .mission-right{display: none;}
+    .missions{width: 100%;}
+    .mission-left{width: 90%;}
 }
 @media (max-width:575px){
     .social-links{display: block;}
