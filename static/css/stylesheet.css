@@ -49,7 +49,7 @@ body{
     justify-content: space-between;
     background-color: rgb(233, 233, 233)  ;
     position: relative;
-    z-index: 999999;
+    z-index: 9999;
 }
 .search-bar{
     margin-right: 50px;
@@ -65,15 +65,20 @@ margin-top:-160px
     font-weight: 400;
     padding-top: 35px ;
     text-align: center;
+    color: #00aa55 !important;
 }
 .card{
     width:80%;
     border:none;
     outline: none;
     text-align: center;
-    background-color: #00aa55 !important;
-    color: white;
+    background-color:white;
+    color: black;
+    padding-bottom: 10px;
     font-size: 14px;
+    position: relative;
+    z-index: 9999;
+    margin-right:0;
 }
 .cards-grid{
     display: grid;
@@ -84,6 +89,11 @@ margin-top:-160px
     grid-column-gap: 20px;
     z-index: 9999;
     margin-bottom: 80px
+}
+.cards-grid a:hover{
+    transform: translateY(-20px);
+    text-decoration: none;
+    color: inherit;
 }
 .carousel-caption{
     padding-bottom: 60px !important;
@@ -133,6 +143,37 @@ margin-top:-160px
     color: white;
     font-weight: 500;
 }
+.photo{position: relative;}
+.Dark{filter: brightness(0.3);}
+.on-photo{
+    position: absolute;
+    bottom: 120px;
+    left:40px;
+    z-index: 99;
+    color:white
+}
+.on-photo hr{border: 1px solid white;}
+.hover-content{
+    width: 80% !important;
+    position: absolute;
+    left:40px;
+    bottom: 20px;
+    z-index: 99;
+    color:white;
+    display: none;
+}
+#hover-content2{
+    bottom: 5px;
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width:100%;
+    grid-column-gap: 0;
+}
+.service-img{
+    width:100%
+}
 @media (max-width:1000px)
 {
     .header{
@@ -149,7 +190,11 @@ margin-top:-160px
     }
     .mission-right{display: none;}
     .missions{width: 100%;}
-    .mission-left{width: 90%;}
+    .mission-left{
+        width: 100%;
+        padding: 20px;
+    }
+    .grid-3{display: block;}
 }
 @media (max-width:575px){
     .social-links{display: block;}
@@ -160,4 +205,36 @@ margin-top:-160px
     .social-links a:first-child{margin:0;}
     .w-100{height: 400px;}
     .carousel-caption h1{font-size:24px}
+}
+@keyframes moveUp{
+    0%{
+        transform: none;
+    }
+    100%{
+        transform: translateY(-40px);
+    }
+}
+@keyframes moveDown{
+    0%{
+        transform: none;
+    }
+    100%{
+        transform: translateY(40px);
+    }
+}
+@keyframes moveUpContent{
+    0%{
+        opacity: 0;
+        transform: none;
+    }
+    30%{
+        opacity: 0.1;
+    }
+    70%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-40px) ;
+    }
 }
