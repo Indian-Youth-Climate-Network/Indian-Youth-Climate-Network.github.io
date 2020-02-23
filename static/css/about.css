@@ -1,21 +1,4 @@
-.upper-nav{
-    background-color: rgba(49,49,49,1);
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    padding-bottom: 5px;
-}
-.right-upper-nav{
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    width:48%
-}
-.left-upper-nav{
-    display: flex;
-    justify-content: space-between;
-    width:35%;
-}
+
 .header{width: 100%;margin: 0;}
 .brand1{width:100%;}
 .main-box{
@@ -42,12 +25,8 @@ dt{font-size:32px;}
 .main-about{
     padding: 150px;background-color: white;
 }
-dd{padding-left: 60px;padding-top: 20px;padding-bottom: 40px;}
-footer{
-    background-color: #282828;
-    padding: 25px;
-}
+
 @media (max-width:1000px){
-    .upper-nav{display: none;}
+    
     .main-about{padding: 20px;padding-top: 100px;}
 }
