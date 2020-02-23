@@ -1,0 +1,25 @@
+.main-box{
+    background-image: url(../event_page-title.jpg);
+    height: 360px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    color: white;
+}
+.main-box-content{
+    text-align: center;
+}
+.main-event{
+    padding: 100px 150px 50px 150px;background-color: white;
+}
+dt{color: #00aa55;font-size: 18px;}
+.header{width: 100%;margin: 0;}
+.brand1{width:100%;}
+.main-event li{
+    list-style-type: square;
+    color: #00aa55;
+}
+li span{color: black;}
+@media (max-width:1000px){
+    .main-event{padding: 20px;padding-top: 100px;}
+    .main-ul {padding-left:20px ;}
+}

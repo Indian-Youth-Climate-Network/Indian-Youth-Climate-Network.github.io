@@ -1,0 +1,21 @@
+.rep-container{
+    background-color: white;
+}
+.rep-content{
+    display: flex;
+    padding:50px
+}
+.rep-left{
+    width: 50%;
+    padding: 40px;
+}
+
+.rep-right{
+    width: 50%;
+    padding: 40px   ;
+}
+.rep-right img{width:90% ; margin-top:90px   }
+@media (max-width:1000px){
+    .rep-content{flex-direction: column-reverse;}
+    .rep-left, .rep-right{width:100%; padding: 0%;}
+}
