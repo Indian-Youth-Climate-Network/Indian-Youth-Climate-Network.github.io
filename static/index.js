@@ -49,65 +49,9 @@ function moveDOWN3(){
 
 
 
-var p = $(".popup__overlay");
-
-$("#popup__toggle").click(function() {
-  p.css("display", "block");
-});
-$("#popup1__toggle").click(function() {
-  p.css("display", "block");
-});
-p.click(function(event) {
-  e = event || window.event;
-  if (e.target == this) {
-    $(p).css("display", "none");
-  }
-});
-$(".popup__close").click(function() {
-  p.css("display", "none");
-});
-
-//video popup
-function toggleVideo(state) {
-  // if state == 'hide', hide. Else: show video
-  var div = document.getElementById("popupVid");
-  var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
-  //div.style.display = state == 'hide' ? 'none' : '';
-  func = state == "hide" ? "pauseVideo" : "playVideo";
-  iframe.postMessage(
-    '{"event":"command","func":"' + func + '","args":""}',
-    "*"
-  );
-}
-
-$("#popup__toggle").click(function() {
-  p.css("visibility", "visible").css("opacity", "1");
-});
-
-p.click(function(event) {
-  e = event || window.event;
-  if (e.target == this) {
-    $(p)
-      .css("visibility", "hidden")
-      .css("opacity", "0");
-    toggleVideo("hide");
-  }
-});
-
-$(".popup__close").click(function() {
-  p.css("visibility", "hidden").css("opacity", "0");
-  toggleVideo("hide");
-});
-
 var sGrid = document.getElementById('slider-grid');
-function sliderMovesLeft(){
-  sGrid.style.animation= "sliderMoveLeft 1s";
-  sGrid.style.transform="translateX(-730px) "
-}
-function sliderMovesRight(){
-  sGrid.style.animation= "sliderMoveRight 1s";
-  sGrid.style.transform="translateX(0px) "
-}
+
+
 var cardOverlay1 = document.getElementById('slider-card-1')
 function overlayWhiteIn1(){
   cardOverlay1.style.animation='moveUp 1s';
@@ -163,3 +107,4 @@ function overlayWhiteOut5(){
   cardOverlay5.style.transform='translateY(0px)';
   document.getElementById('rm5').style.display="none"
 }
+
