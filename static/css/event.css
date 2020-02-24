@@ -22,4 +22,16 @@ li span{color: black;}
 @media (max-width:1000px){
     .main-event{padding: 20px;padding-top: 100px;}
     .main-ul {padding-left:20px ;}
+    .slider-grid{display: block !important;}
+    .slider-card{margin-bottom: 20px;}
 }
+.slider-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-top: 80px;
+    width: 100%;
+    padding-bottom: 80px;
+}
+#rm4,#rm5{display: none;}
