@@ -435,7 +435,7 @@ margin-top:-160px
     color: white;
 }
 .header1{width: 100%;margin: 0;}
-.brand1{width:100%;}
+.brand1{width:100%;display:none}
 .main-box-content{
     text-align: center;
 }
