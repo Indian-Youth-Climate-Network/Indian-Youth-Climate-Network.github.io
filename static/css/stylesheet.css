@@ -19,17 +19,44 @@ body{
     padding: 20px;
     padding-bottom: 5px;
 }
-.right-upper-nav{
+.upper-nav-container{
+    width:40%;
     color: white;
     display: flex;
-    justify-content: space-between;
-    width:48%
+    justify-content: space-around;
+    margin-left: 800px;
 }
-.left-upper-nav{
-    display: flex;
-    justify-content: space-between;
-    width:35%;
+.form-container{
+    padding:125px;
 }
+.form{text-align: center;}
+.form-inner{display: flex;padding: 60px;justify-content: space-evenly;}
+.r-container{
+    background-color: white;
+}
+.inp{
+    border:0;
+    background:transparent;
+    border-bottom: 2px solid black;
+    color:white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.inp1{
+    margin-left:-20px;margin-right: 20px;
+}
+.submit-btn{
+    background-color: white;
+    color:black;
+    border:none;
+    border-radius: 50px;
+    margin-left:20px;
+    width:150px;
+    height: 50px;
+}
+
 footer{
     background-color: #282828;
     padding: 25px;
@@ -369,30 +396,7 @@ margin-top:-160px
     background-color: white;
     padding:60px
 }
-.form{background-image: url(../partners_bg.jpg); height:200px}
-.form-inner{display: flex;padding: 60px;justify-content: space-evenly;}
-.inp{
-    border:0;
-    background:transparent;
-    border-bottom: 1px solid #dedede;
-    color:white;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 600;
-}
-.inp1{
-    margin-left:-20px;margin-right: 20px;
-}
-.submit-btn{
-    background-color: white;
-    color:black;
-    border:none;
-    border-radius: 50px;
-    margin-left:20px;
-    width:150px;
-    height: 50px;
-}
-::placeholder{color:white}
+
 .footer{
     display: grid;
     grid-template-columns: 1fr 2fr;
