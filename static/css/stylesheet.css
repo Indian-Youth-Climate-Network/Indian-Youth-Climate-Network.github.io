@@ -34,6 +34,9 @@ body{
 .r-container{
     background-color: white;
 }
+.navbar-nav li:nth-child(3){
+    display: none;
+}
 .inp{
     border:0;
     background:transparent;
