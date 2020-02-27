@@ -126,13 +126,14 @@ margin-top:-160px
 }
 .w-100{filter: brightness(0.3);}
 .card{
-    width:80%;
+    width:150px;
+    height: 150px;
     border:none;
     outline: none;
     text-align: center;
     background-color:white;
     color: black;
-    padding-bottom: 10px;
+    padding : 10px;
     font-size: 14px;
     position: relative;
     z-index: 9999;
