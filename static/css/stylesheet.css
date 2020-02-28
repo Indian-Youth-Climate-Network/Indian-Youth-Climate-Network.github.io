@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: inherit;
 }
+.form-inline{display:none}
 body{
     margin: 0;
     font-size: 32px;
