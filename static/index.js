@@ -208,3 +208,113 @@ $(".popup__close2").click(function() {
   toggleVideo2("hide");
   
 });
+
+
+
+
+
+
+
+
+
+var p3 = $(".popup__overlay3");
+
+$("#popup__toggle3").click(function() {
+  p3.css("display", "block");
+});
+p3.click(function(event) {
+  e = event || window.event;
+  if (e.target == this) {
+    $(p3).css("display", "none");
+  }
+});
+$(".popup__close3").click(function() {
+  p3.css("display", "none");
+});
+
+//video popup
+function toggleVideo3(state) {
+  // if state == 'hide', hide. Else: show video
+  var div3 = document.getElementById("popupVid3");
+  var iframe3 = div3.getElementById("iframe3")[0].contentWindow;
+  //div.style.display = state == 'hide' ? 'none' : '';
+  func = state == "hide" ? "pauseVideo" : "playVideo";
+  iframe3.postMessage(
+    '{"event":"command","func":"' + func + '","args":""}',
+    "*"
+  );
+}
+
+$("#popup__toggle3").click(function() {
+  p3.css("visibility", "visible").css("opacity", "1");
+});
+
+p3.click(function(event) {
+  e = event || window.event;
+  if (e.target == this) {
+    $(p3)
+      .css("visibility", "hidden")
+      .css("opacity", "0");
+    toggleVideo3("hide"); 
+  }
+});
+
+$(".popup__close3").click(function() {
+  p3.css("visibility", "hidden").css("opacity", "0");
+  toggleVideo3("hide");
+  
+});
+
+
+
+
+
+
+
+var p4 = $(".popup__overlay4");
+
+$("#popup__toggle4").click(function() {
+  p4.css("display", "block");
+});
+p4.click(function(event) {
+  e = event || window.event;
+  if (e.target == this) {
+    $(p4).css("display", "none");
+  }
+});
+$(".popup__close4").click(function() {
+  p4.css("display", "none");
+});
+
+//video popup
+function toggleVideo4(state) {
+  // if state == 'hide', hide. Else: show video
+  var div4 = document.getElementById("popupVid4");
+  var iframe4 = div4.getElementById("iframe4")[0].contentWindow;
+  //div.style.display = state == 'hide' ? 'none' : '';
+  func = state == "hide" ? "pauseVideo" : "playVideo";
+  iframe4.postMessage(
+    '{"event":"command","func":"' + func + '","args":""}',
+    "*"
+  );
+}
+
+$("#popup__toggle4").click(function() {
+  p4.css("visibility", "visible").css("opacity", "1");
+});
+
+p4.click(function(event) {
+  e = event || window.event;
+  if (e.target == this) {
+    $(p4)
+      .css("visibility", "hidden")
+      .css("opacity", "0");
+    toggleVideo4("hide"); 
+  }
+});
+
+$(".popup__close4").click(function() {
+  p4.css("visibility", "hidden").css("opacity", "0");
+  toggleVideo4("hide");
+  
+});
