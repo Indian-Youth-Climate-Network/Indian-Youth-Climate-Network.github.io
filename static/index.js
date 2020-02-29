@@ -108,3 +108,103 @@ function overlayWhiteOut5(){
   document.getElementById('rm5').style.display="none"
 }
 
+var p = $(".popup__overlay");
+
+$("#popup__toggle").click(function() {
+  p.css("display", "block");
+});
+p.click(function(event) {
+  e = event || window.event;
+  if (e.target == this) {
+    $(p).css("display", "none");
+  }
+});
+$(".popup__close").click(function() {
+  p.css("display", "none");
+});
+
+//video popup
+function toggleVideo(state) {
+  // if state == 'hide', hide. Else: show video
+  var div = document.getElementById("popupVid");
+  var iframe = div.getElementById("iframe1")[0].contentWindow;
+  //div.style.display = state == 'hide' ? 'none' : '';
+  func = state == "hide" ? "pauseVideo" : "playVideo";
+  iframe.postMessage(
+    '{"event":"command","func":"' + func + '","args":""}',
+    "*"
+  );
+}
+
+$("#popup__toggle").click(function() {
+  p.css("visibility", "visible").css("opacity", "1");
+});
+
+p.click(function(event) {
+  e = event || window.event;
+  if (e.target == this) {
+    $(p)
+      .css("visibility", "hidden")
+      .css("opacity", "0");
+    toggleVideo("hide");
+  }
+});
+
+$(".popup__close").click(function() {
+  p.css("visibility", "hidden").css("opacity", "0");
+  toggleVideo("hide");
+});
+
+
+
+
+
+
+
+var p2 = $(".popup__overlay2");
+
+$("#popup__toggle2").click(function() {
+  p2.css("display", "block");
+});
+p2.click(function(event) {
+  e = event || window.event;
+  if (e.target == this) {
+    $(p2).css("display", "none");
+  }
+});
+$(".popup__close2").click(function() {
+  p2.css("display", "none");
+});
+
+//video popup
+function toggleVideo2(state) {
+  // if state == 'hide', hide. Else: show video
+  var div2 = document.getElementById("popupVid2");
+  var iframe2 = div2.getElementById("iframe2")[0].contentWindow;
+  //div.style.display = state == 'hide' ? 'none' : '';
+  func = state == "hide" ? "pauseVideo" : "playVideo";
+  iframe2.postMessage(
+    '{"event":"command","func":"' + func + '","args":""}',
+    "*"
+  );
+}
+
+$("#popup__toggle2").click(function() {
+  p2.css("visibility", "visible").css("opacity", "1");
+});
+
+p2.click(function(event) {
+  e = event || window.event;
+  if (e.target == this) {
+    $(p2)
+      .css("visibility", "hidden")
+      .css("opacity", "0");
+    toggleVideo2("hide"); 
+  }
+});
+
+$(".popup__close2").click(function() {
+  p2.css("visibility", "hidden").css("opacity", "0");
+  toggleVideo2("hide");
+  
+});
