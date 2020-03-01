@@ -457,7 +457,13 @@ margin-top:-160px
     padding: 150px;background-color: white;
 }
 @media (max-width:1000px)   
-{   .upper-right-footer,.footer{display: block;}
+{    .carousel-caption{font-size:14px;padding-bottom: 25px !important;}
+      .carousel-control-next, .carousel-control-prev{top:150px !important ;}
+    .carousel-caption h1{font-size:16px}
+    .join-btn{width:120px;height: 30px;}
+    .card{width:100px;height:100px;margin-left: 18%;}
+    .icon{padding-top:0}
+    .upper-right-footer,.footer{display: block;}
     .upper-left , .upper-right{width: 100%;padding-bottom: 10px;}
     .left-footer-container{width:100%;padding:25px}
     .submit-btn{margin-top:30px}
@@ -499,6 +505,9 @@ margin-top:-160px
     }
     .upper-nav{display: none;}
     .card-overlay h4{width:50%}
+}
+@media (max-width:325px){
+    .card{margin-left: 13%;;}
 }
 @media (max-width:575px){
     .social-links{display: block;}
