@@ -472,6 +472,7 @@ margin-top:-160px
     .form-inner h1{font-size:25px !important ; text-align: center;}
     .form{height:350px;padding:10px}
     .publications{padding-left: 30px;padding-right: 30px;}
+    .goals-cards-grid{    width: 70%; margin-left:15%;}
     .p-header{display: block;}
     .p-header h1{font-size: 30px;}
     .header{width:100%;margin: 0;}
