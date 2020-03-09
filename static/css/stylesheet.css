@@ -132,8 +132,8 @@ margin-top:-160px
 }
 .w-100{filter: brightness(0.3);}
 .card{
-    width:165px;
-    height: 150px;
+    width:100%;
+    height: 100%;
     border:none;
     outline: none;
     text-align: center;
@@ -144,6 +144,61 @@ margin-top:-160px
     position: relative;
     z-index: 9999;
     margin-right:0;
+}
+.cc{
+    padding-bottom: 60px !important;
+    position: absolute;
+    right: 15%;
+    top: 38%;
+    left: 15%;
+    z-index: 10;
+    text-align: left !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 58% !important;
+    color: #fff;
+    text-align: center;
+
+}
+
+.carousel-caption h1{
+    font-size: 62px !important;
+    margin-bottom: 40px;    
+    animation: captionMovesUp 2s;
+    animation-delay: 1ms;
+}
+.carousel-caption p{
+    font-size: 24px !important;
+    animation: captionMovesRight 2s;
+    animation-delay: 1ms;
+}
+@keyframes captionMovesUp{
+    0%{
+        transform: translateY(120px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateY(-20px);
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes captionMovesRight{
+    0%{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(40px);
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .cards-grid{
     display: grid;
@@ -161,8 +216,6 @@ margin-top:-160px
     transform: translateY(-20px) ;
     text-decoration: none;
     color: inherit;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-
 }
 .card:hover{background-color: #00aa55 !important;color: white !important;}
 .card:hover .icon{color: white !important;}
@@ -476,9 +529,11 @@ margin-top:-160px
     padding: 150px;background-color: white;
 }
 @media (max-width:1000px)   
-{    .carousel-caption{font-size:14px;padding-bottom: 25px !important;}
+{    .carousel-caption{font-size:14px !important ;padding-bottom: 25px !important;top:45% !important}
+    .cc{width: 65% !important;}
+    .carousel-caption p{font-size:12px !important;margin-bottom: 0px;}
       .carousel-control-next, .carousel-control-prev{top:150px !important ;}
-    .carousel-caption h1{font-size:16px}
+    .carousel-caption h1{font-size:24px !important;margin-bottom:10px;}
     .join-btn{width:120px;height: 30px;}
     .card{width:100px;height:100px;margin-left: 18%;}
     .icon{padding-top:0}
@@ -497,7 +552,7 @@ margin-top:-160px
     .header{width:100%;margin: 0;}
     .para{display: none;}
     .slider{position: relative;}
-    .cards-grid{grid-template-columns: 1fr 1fr;grid-row-gap: 10px;}
+    .cards-grid{grid-template-columns: 1fr 1fr;grid-row-gap: 10px;margin-bottom:40px}
     .mission-right{display: none;}
     .missions{width: 100%;margin-left: 0; padding: 30px;}
     .mission-left{width: 100%;padding: 20px;}
