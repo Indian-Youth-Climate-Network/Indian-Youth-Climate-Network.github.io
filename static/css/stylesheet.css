@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    outline: none;
 }
 .form-inline{display:none}
 body{
@@ -120,6 +121,7 @@ margin-top:-160px
     padding-top: 35px ;
     text-align: center;
     color: #00aa55 !important;
+    margin-bottom: 10px;
 }
 .join-btn{
     filter: opacity(0.4);
@@ -130,7 +132,7 @@ margin-top:-160px
 }
 .w-100{filter: brightness(0.3);}
 .card{
-    width:150px;
+    width:165px;
     height: 150px;
     border:none;
     outline: none;
@@ -151,12 +153,27 @@ margin-top:-160px
     grid-template-columns: repeat(6 , 1fr);
     grid-column-gap: 20px;
     z-index: 9999;
-    margin-bottom: 80px
+    margin-bottom: 80px;
+    font-weight: 600;
 }
-.cards-grid a:hover{
-    transform: translateY(-20px);
+.cards-grid a:hover {
+    animation: cardsMoveUp 1s ;
+    transform: translateY(-20px) ;
     text-decoration: none;
     color: inherit;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+
+}
+.card:hover{background-color: #00aa55 !important;color: white !important;}
+.card:hover .icon{color: white !important;}
+@keyframes cardsMoveUp{
+    0%{
+        transform: none ;
+    }
+    100%{
+        transform: translateY(-20px) ;
+    }
+
 }
 .carousel-caption{
     padding-bottom: 60px !important;
@@ -166,12 +183,14 @@ margin-top:-160px
 }
 .missions{
     display: flex;
-    width:100%;
+    width: 90%;
+    margin-left: 10%;
+    margin-bottom: 80px;
 }
 .mission-left{
-    width:50%;
-    padding: 50px;
-    padding-left: 80px
+    width: 50%;
+    padding-top: 50px;
+    padding-right: 50px;
 }
 .mission-left ol li {
     color: #00aa55;
@@ -257,7 +276,6 @@ margin-top:-160px
 .countersBg{
 
     width:100%;
-    margin-top: 60px;
     margin-bottom: 20px;
     height: 40vh;
     
@@ -266,7 +284,7 @@ margin-top:-160px
 .goals{
     padding-top: 60px;
     padding-bottom: 20px;
-    background: white;
+/*     background: white; */
 }
 .goals-cards-grid{
     margin: 80px 10% 40px 10%;
@@ -279,6 +297,7 @@ margin-top:-160px
 .goals-cards-grid span p {color: rgb(133, 128, 128);font-size: 16px;}
 .goalsImg {
     width: 100%;
+    margin-bottom:10px
 }
 .clip-1{
     padding-bottom: 60px;position: relative !important;background-color: white;
@@ -480,11 +499,11 @@ margin-top:-160px
     .slider{position: relative;}
     .cards-grid{grid-template-columns: 1fr 1fr;grid-row-gap: 10px;}
     .mission-right{display: none;}
-    .missions{width: 100%;}
+    .missions{width: 100%;margin-left: 0; padding: 30px;}
     .mission-left{width: 100%;padding: 20px;}
     .grid-3 , .countersGrid , .goals-cards-grid , 
     .grid-3-v2{grid-template-columns: 1fr; grid-row-gap: 20px;}
-    .grid-3-v2-content{width: 100%;}
+    .grid-3-v2-content{width: 100%;margin-top:40px}
     .goals h1{font-size: 28px;}
     .countersBg{height: 40rem;}
     .clip-1-photo {height: 50vh;}
