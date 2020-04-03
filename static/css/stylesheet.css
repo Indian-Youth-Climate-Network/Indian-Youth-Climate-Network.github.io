@@ -432,6 +432,19 @@ margin-top:-160px
     display: flex;
     justify-content: space-between;
 }
+#sc1{
+	background-image: url("../youthclimate.jpg")
+}
+#sc2{
+	background-image: url("../hack.jpg")
+}
+#sc3{
+	background-image: url("../aravalipark.jpg")
+}
+#sc1, #sc2, #sc3{
+	background-position:center;
+	background-size: cover
+}
 .my-slider-controls{
     display:none;
     width:5%;
@@ -449,6 +462,7 @@ margin-top:-160px
     margin-left: 10%;
     overflow-x: hidden;
 }
+.slider-card{width:395px; height:450px}
 .slider-card img {width:100%}
 .slider-grid{
     display: grid;
@@ -552,6 +566,7 @@ margin-top:-160px
     .header{width:100%;margin: 0;}
     .para{display: none;}
     .slider{position: relative;}
+	.card p{font-size: 13px}
     .cards-grid{grid-template-columns: 1fr 1fr;grid-row-gap: 10px;margin-bottom:40px}
     .mission-right{display: none;}
     .missions{width: 100%;margin-left: 0; padding: 30px;}

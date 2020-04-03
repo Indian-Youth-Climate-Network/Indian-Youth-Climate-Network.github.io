@@ -8,6 +8,14 @@
 .main-box-content{
     text-align: center;
 }
+#sc4{
+	background-image: url("../charcha.jpg");
+	background-position:center
+}
+#sc5{
+	background-image:url("../roleofyouth.jpg");
+	background-position: right
+}
 .main-event{
     padding: 100px 150px 50px 150px;background-color: white;
 }
