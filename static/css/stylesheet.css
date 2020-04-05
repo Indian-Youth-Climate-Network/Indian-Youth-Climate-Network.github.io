@@ -6,9 +6,10 @@
     box-sizing: inherit;
     outline: none;
 }
-.poster{width: 33%;margin-left:35% ;filter: opacity(1) !important    ;}
+.poster{width: 33%;margin-left:35% ; }
 .modal-header{border:none !important}
-.modal-content{background: black !important;filter: opacity(0.9);}
+.modal-content{background: rgba(0, 0, 0, 0.8) !important;height: 100vh;}
+.modal-body{align-items: center;display: flex;}
 .modal{z-index: 99999999 !important;padding-right: 0 !important;}
 .modal-dialog{width: 100% !important;margin: 0 !important;max-width: 100% !important;}
 .close{color:white !important}
