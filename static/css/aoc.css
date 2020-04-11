@@ -66,8 +66,8 @@
     .left-aoc{width: 100%; padding: 50px 10px}
     .AOC-content{display: block;padding-top: 30px;}
     .mid-aoc{width:100%;margin-left: 0px;}
-    .right-aoc img{margin-left:-10px;width:100%;}
-    .right-aoc{width:100%}
+    .right-aoc img{margin-left:-10px;width:100%; display:none;}
+    .right-aoc{width:100%; display:none;}
     .clip-1-flex{display: block;top:5%;}
     .clip-1-flex i{margin-left: 40%;}
     .clip-1-photo{height: 400px;}
