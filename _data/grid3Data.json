@@ -1,0 +1,57 @@
+{
+    "grid1" : [ 
+        {
+            "href": "./about.html",
+            "imgLink": "./static/images/aravali-2.jpeg",
+            "h3": "About Us",
+            "p": "IYCN was founded in 2008 as a coalition of young people & youth-oriented organisations to take action on climate change.",
+            "function1": "moveUP('photo1' ,'onPhoto1', 'hover-content1')",
+            "function2": "moveDOWN('photo1' ,'onPhoto1', 'hover-content1')",
+            "id1": "photo1",
+            "id2": "onPhoto1",
+            "id3": "hover-content1"
+        },
+        {
+            "href": "./events.html",
+            "imgLink": "./static/images/aravali.jpeg",
+            "h3": "Activities",
+            "p": "In last 11 years, IYCN has organised campaigns to encourage action, solution-based projects, and events to bring people’s voice together on specific demands for action on climate change.",
+            "function1": "moveUP('photo2', 'onPhoto2' , 'hover-content2')",
+            "function2": "moveDOWN('photo2','onPhoto2', 'hover-content2')",
+            "id1": "photo2",
+            "id2": "onPhoto2",
+            "id3": "hover-content2"
+        },
+        {
+            "href": "./iycnAtCOP.html",
+            "imgLink": "./static/images/cop12.jpg",
+            "h3": "IYCN at COP",
+            "p": "No matter what happens, in Paris, or Marrakech, or at COP23 or any future COP, our world will be fundamentally altered by the reality that is climate change",
+            "function1": "moveUP('photo3' ,'onPhoto3' , 'hover-content3')",
+            "function2": "moveDOWN('photo3' ,'onPhoto3' , 'hover-content3')",
+            "id1": "photo3",
+            "id2": "onPhoto3",
+            "id3": "hover-content3"
+        }
+    ],
+    "grid2": [
+        {
+           "h1": "01",
+           "h3": "Call for Interns",
+           "p": "Calling all young and passionate people of India to help the humanity achieve some of the toughest goals.",
+           "href": "https://www.internshala.com"
+        },
+        {
+            "h1": "02",
+            "h3": "Solar Challenge India",
+            "p": "Design, build and drive a solar powered electric vehicle to make an expedition of 3000+ kms from Kerala to Delhi. Or make another one, like F1 car, which can be tested in a racing track to find the speed limits.",
+            "href": "https://www.suryakranti.org/"
+         },
+         {
+            "h1": "03",
+            "h3": "HydrometINDIA 2020 - Varysian",
+            "p": "India represents one of the fastest growing hydromet markets in the world. A huge nation with a vast array of regions, weather conditions and uses for cutting edge hydromet advice and technology.",
+            "href": "https://www.varysian.com/hydrometindia-2020"
+         }
+    ]
+}

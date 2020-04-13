@@ -1,0 +1,26 @@
+[
+    {
+        "class": "  fa fa-balance-scale  ",
+        "cardP": "CLIMATE JUSTICE"
+    },
+    {
+        "class": "fas fa-book-open  ",
+        "cardP": "POLICY DESIGN"
+    },
+    {
+        "class": "  fa fa-bolt",
+        "cardP": "CLIMATE JUSTICE"
+    },
+     {
+        "class": "fas fa-users  ",
+        "cardP": "AWARENESS"
+    },
+   {
+        "class": "fas fa-user-tie  ",
+        "cardP": "LEADERSHIP"
+    },
+    {
+        "class": "fas fa-search  ",
+        "cardP": "RESEARCH"
+    }
+]

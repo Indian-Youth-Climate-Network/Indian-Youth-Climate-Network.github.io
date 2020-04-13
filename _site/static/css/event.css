@@ -1,0 +1,45 @@
+.main-box{
+    background-image: url(../images/event_page-title.jpg);
+    height: 360px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    color: white;
+}
+.main-box-content{
+    text-align: center;
+}
+#sc4{
+	background-image: url("../images/charcha.jpg");
+	background-position:center
+}
+#sc5{
+	background-image:url("../images/roleofyouth.jpg");
+	background-position: right
+}
+.main-event{
+    padding: 100px 150px 50px 150px;background-color: white;
+}
+dt{color: #00aa55;font-size: 18px;}
+.header{width: 100%;margin: 0;}
+.brand1{width:100%;}
+.main-event li{
+    list-style-type: square;
+    color: #00aa55;
+}
+li span{color: black;}
+@media (max-width:1000px){
+    .main-event{padding: 20px;padding-top: 100px;}
+    .main-ul {padding-left:20px ;}
+    .slider-grid{display: block !important;}
+    .slider-card{margin-bottom: 20px;}
+}
+.slider-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-top: 80px;
+    width: 100%;
+    padding-bottom: 80px;
+}
+#rm4,#rm5{display: none !important;}
