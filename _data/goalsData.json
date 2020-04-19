@@ -1,0 +1,42 @@
+[
+    {
+        "imgLink": "./static/images/4-Quality-education-1024x1024.png",
+        "h4": "Quality Education",
+        "p": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all."
+    },
+    {
+        "imgLink": "./static/images/7-Affordable-and-clean-energy-1024x1024.png",
+        "h4": "Affordable & Clean Energy",
+        "p": "Ensure access to affordable, reliable, sustainable and modern energy for all."
+    },
+    {
+        "imgLink": "./static/images/13-Climate-action-1024x1024.png",
+        "h4": "Climate Action",
+        "p": "Take urgent action to combat climate change and its impacts*."
+    },
+    {
+        "imgLink": "./static/images/17-Partnerships-for-the-goals-1-1024x1024.png",
+        "h4": "Partnership For The Goals",
+        "p": "Strengthen the means of implementation and revitalize the global partnership for sustainable development."
+    },
+    {
+        "imgLink": "./static/images/15-Life-on-land-1024x1024.png",
+        "h4": "Life On Land",
+        "p": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss."
+    },
+    {
+        "imgLink": "./static/images/11-Sustainable-cities-and-communities-1024x1024.png",
+        "h4": "Sustainable Cities & Communities",
+        "p": "Make cities and human settlements inclusive, safe, resilient and sustainable."
+    },
+    {
+        "imgLink": "./static/images/12-Responsible-consumption-and-production-1024x1024.png",
+        "h4": "Responsible Consumption & Production",
+        "p": "Ensure sustainable consumption and production patterns."
+    },
+    {
+        "imgLink": "./static/images/14-Life-below-water-1024x1024.png",
+        "h4": "Life Below Water",
+        "p": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development."
+    }
+]

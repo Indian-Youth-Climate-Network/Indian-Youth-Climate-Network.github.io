@@ -6,14 +6,46 @@
     box-sizing: inherit;
     outline: none;
 }
+.poster{width: 33%;margin-left:35% ;filter: opacity(1) !important    ;}
+.modal-header{border:none !important}
+.modal-content{background: black !important;filter: opacity(0.9);}
+.modal{z-index: 99999999 !important;padding-right: 0 !important;}
+.modal-dialog{width: 100% !important;margin: 0 !important;max-width: 100% !important;}
+.close{color:white !important}
 .form-inline{display:none}
 body{
     margin: 0;
     font-size: 32px;
+    position: absolute;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(233, 233, 233) !important  ;
-    scroll-behavior: smooth;
+    /* background-color: rgb(233, 233, 233) !important  ; */
+
 }
+.earth-left{
+    width:8%;
+    left:-44px;
+    top: 150px;
+    position: fixed;
+    z-index: 9999999;
+
+}
+@keyframes moveOut{
+	0% {
+		transform: translateX(0)
+	}
+	100%{
+		transform: translateX(35px);
+	}
+}
+@keyframes moveIn{
+	0% {
+		transform: translateX(35px)
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+
 .upper-nav{
     background-color: rgba(49,49,49,1);
     display: flex;
@@ -95,6 +127,7 @@ dd{padding-left: 60px;padding-top: 20px;padding-bottom: 40px;}
     width: 70%;
 
 }
+.bg-example{z-index: 999999999 !important;}
 .social-icons{
     padding:15px;
 }
@@ -130,7 +163,7 @@ margin-top:-160px
     border-radius: 25px;
     border: none;
 }
-.w-100{filter: brightness(0.3);}
+.w-100{filter: brightness(0.1);}
 .card{
     width:100%;
     height: 100%;
@@ -141,7 +174,7 @@ margin-top:-160px
     color: black;
     padding : 10px;
     font-size: 14px;
-    position: relative;
+    position: relative; background-color: rgb(250, 250, 250) !important  ;
     z-index: 9999;
     margin-right:0;
 }
@@ -433,13 +466,13 @@ margin-top:-160px
     justify-content: space-between;
 }
 #sc1{
-	background-image: url("../youthclimate.jpg")
+	background-image: url("../images/youthclimate.jpg")
 }
 #sc2{
-	background-image: url("../hack.jpg")
+	background-image: url("../images/hack.jpg")
 }
 #sc3{
-	background-image: url("../aravalipark.jpg")
+	background-image: url("../images/aravalipark.jpg")
 }
 #sc1, #sc2, #sc3{
 	background-position:center;
@@ -545,6 +578,7 @@ margin-top:-160px
 @media (max-width:1000px)   
 {    .carousel-caption{font-size:14px !important ;padding-bottom: 25px !important;top:45% !important}
     .cc{width: 65% !important;}
+
     .carousel-caption p{font-size:12px !important;margin-bottom: 0px;}
       .carousel-control-next, .carousel-control-prev{top:150px !important ;}
     .carousel-caption h1{font-size:24px !important;margin-bottom:10px;}
@@ -593,6 +627,16 @@ margin-top:-160px
         margin-left: 10% !important;
         margin-top: -5%;
     }
+    .poster{
+        width:100%;
+        height: 95vh;
+
+        margin-left: 0;
+    }
+    .modal-body{
+        height:113vh;
+        padding: 3rem !important;		margin-top:50px;
+    }
     .upper-nav{display: none;}
     .card-overlay h4{width:50%}
 }
@@ -608,7 +652,9 @@ margin-top:-160px
     .social-links a:first-child{margin:0;}
     .w-100{height: 400px;}
     .carousel-caption h1{font-size:24px}
+    
 }
+
 @keyframes moveUp{
     0%{
         transform: none;

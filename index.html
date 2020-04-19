@@ -1,377 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IYCN</title>
-    <link rel="stylesheet" href="./static/css/stylesheet.css" type="text/css">
-   
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
-<body>
-    <div class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="./static/indianyouth-climate.gif" class="brand"></a>
+---
+layout: default
+title: IYCN HOME
+---
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0" style="margin-right: 80px;">
-                <li class="nav-item active">
-                <a class="nav-link" href="#" style="color:#00A956">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./about.html">About Us</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./history.html">Our History</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-               <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Our Team</a> 
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Projects
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./agentofchange.html">Agents of Change</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./ruralenergyproject.html">Rural Energy Project</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./climatesolution.html">Climate Solutions Road Tour</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./climateleadership.html">Climate Leadership Program</a>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="./events.html" tabindex="-1" aria-disabled="true">Activities</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    IYCN at COP
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./iycnCOP1.html">Perspective on CoP22</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./iycnCOP2.html">Paris Change Negotiations</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./iycnCOP3.html">THE COP 21 FOR DUMMIES</a>
-                    </div>
-                </li>
-
-            </ul>
-
-            </div></nav>
-    </div>
     <div class="bd-example slider">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./static/slider-01.jpg" class="d-block w-100 >" alt="...">
-              <div class="carousel-caption d-md-block cc">                
-                <p>Establishing a youth presence amongst decision makers</p>
-                <h1>Youth Engagement.</h1>
-                <a href="./register.html"><button class="join-btn">JOIN US NOW</button></a>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./static/slider-02.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-md-block cc">
-                <p>The world needs leadership on climate change.</p>
-                <h1>We are Always Open for World.</h1>
-                <a href="./register.html"><button class="join-btn">JOIN US NOW</button></a>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./static/slider-03.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-md-block cc">
-                <p>Trainings to young people to develop leadership to be able to take action on climate change</p>
-                <h1>Climate Leadership Training.</h1>
-                <a href="./register.html"><button class="join-btn">JOIN US NOW</button></a>
-              </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src={{ site.data.sliderData.slider1.imgLink }} class="d-block w-100 " alt="...">
+            <div class="carousel-caption d-md-block cc">                
+              <p>{{ site.data.sliderData.slider1.sliderP }}</p>
+              <h1>{{ site.data.sliderData.slider1.sliderH1 }}</h1>
+              <a href="./register.html"><button class="join-btn">JOIN US NOW</button></a>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="carousel-item">
+            <img src={{ site.data.sliderData.slider2.imgLink }} class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block cc">
+              <p>{{ site.data.sliderData.slider2.sliderP }}</p>
+              <h1>{{ site.data.sliderData.slider2.sliderH1 }}</h1>
+              <a href="./register.html"><button class="join-btn">JOIN US NOW</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src={{ site.data.sliderData.slider3.imgLink }} class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block cc">
+              <p>{{ site.data.sliderData.slider3.sliderP }}</p>
+              <h1>{{ site.data.sliderData.slider3.sliderH1 }}</h1>
+              <a href="./register.html"><button class="join-btn">JOIN US NOW</button></a>
+            </div>
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </div>
+  <div class="cards-grid">
+      {% for card in site.data.cards %}
+    <a href="#"><div class="card">
+      <i class="icon {{ card.class }}"></i>
+      <p>{{ card.cardP}}</p>
+    </div></a>
+    {% endfor %}
+</div>
+<div class="missions">
+    <div class="mission-left">
+      <h5 class="text-green">{{ site.data.headings.mission.h5 }}</h5>
+      <h1>{{ site.data.headings.mission.h1 }}</h1>
+      <hr width="70px" style="border: #00A956 1px solid; ">
+      <p class="text-gray">{{ site.data.headings.mission.p }}</p>
+      <h3>{{ site.data.headings.mission.h3 }}</h3>
+      <ol>
+          {% for list in site.data.missionList %}
+            <li><span>{{ list.listData }}</span></li>
+          {% endfor %}
+      </ol>
+      <a href="./about.html"><button class="learn-more-btn">{{ site.data.headings.mission.btn }}</button></a>
     </div>
-    <div class="cards-grid">
-          <a href="#"><div class="card">
-            <i class="icon fa fa-balance-scale icon"></i>
-            <p>CLIMATE JUSTICE</p>
-          </div></a>
-          <a href="#"><div class="card">
-            <i class="fas fa-book-open icon"></i>
-            <p>POLICY DESIGN</p>
-          </div></a>
-          <a href="#"><div class="card">
-            <i class="icon fa fa-bolt"></i>
-            <p>CLIMATE ACTION</p>
-          </div></a>
-          <a href="#"><div class="card">
-            <i class="fas fa-users icon"></i>
-            <p>AWARENESS</p>
-          </div></a>
-          <a href="#"><div class="card">
-            <i class="fas fa-user-tie icon"></i>
-            <p>LEADERSHIP</p>
-          </div></a>
-          <a href="#"><div class="card">
-            <i class="fas fa-search icon"></i>
-            <p>RESEARCH</p>
-          </div></a>
+    <div class="mission-right">
+      <img src={{ site.data.images.mission.imgLink }} alt = {{ site.data.images.mission.alt }} class="allison-photo"/>
     </div>
-    <div class="missions">
-      <div class="mission-left">
-        <h5 class="text-green">Our Missions</h5>
-        <h1>Archived</h1>
-        <hr width="70px" style="border: #00A956 1px solid; ">
-        <p class="text-gray">To unite the youth of India to ensure a clean, bright future. We aim to generate awareness and empower a generation of young people to take effective action against climate change, at a local, state, national and international level.</p>
-        <h3>We Promise To:</h3>
-        <ol>
-          <li><span>Support each other on programs and projects.</span></li>
-          <li><span>Unite for the cause of climate change.</span></li>
-          <li><span>Share our stories of local climate challenges.</span></li>
-          <li><span>Engage in workshops, learn, exchange and empower each other.</span></li>
-          <li><span>Inspire others into action.</span></li>
-          <li><span>Will change our future for the better.</span></li>
-        </ol>
-        <a href="#"><button class="learn-more-btn">LEARN MORE</button></a>
+</div>
+<div class="grid-3" style="grid-row-gap: 0;">
+    {% for gData in site.data.grid3Data.grid1 %}
+    <a href={{ gData.href }} onmouseover="{{ gData.function1 }}" onmouseout="{{ gData.function2 }}"><div class="photo"  >
+      <img src={{ gData.imgLink }} class="service-img" id={{ gData.id1 }} />
+      <div class="on-photo" id={{ gData.id2 }} >
+        <hr width="60px" >
+        <h3>{{ gData.h3 }}</h3>
       </div>
-      <div class="mission-right">
-        <img src="./static/charcha.jpg" class="allison-photo"/>
-      </div>
+      <span class="hover-content" id={{ gData.id3}}>
+        <p>{{ gData.p }}</p>
+      </span>
+  </div></a>
+  {% endfor %}
+</div>
+<div style="position: relative;">
+    <img src="./static/images/counters_bg.jpg" class="countersBg"/>
+    <div class="countersGrid">
+        {% for counter in site.data.counter %}
+      <span><h1>{{ counter.h1 }}</h1>{{ counter.span }}</span>
+      {% endfor %}
+      
     </div>
-    <div class="grid-3" style="grid-row-gap: 0;">
-      <a href="./about.html"><div class="photo"  onmouseover=" moveUP1() " onmouseout="moveDOWN1()">
-        <img src="./static/aravali-2.jpeg" class="service-img" id="photo1"/>
-        <div class="on-photo" id="onPhoto1" >
-          <hr width="60px" >
-          <h3>About Us</h3>
-        </div>
-        <span class="hover-content" id="hover-content1">
-          <p>IYCN was founded in 2008 as a coalition of young people & youth-oriented organisations to take action on climate change.</p>
-        </span>
-	</div></a>
-     <a href="./events.html"> <div class="photo" onmouseover=" moveUP2() " onmouseout="moveDOWN2()"> 
-        <img src="./static/aravali.jpeg" class="service-img" id="photo2" />
-        <div class="on-photo" id="onPhoto2">
-          <hr width="60px" >
-        <h3>Activities</h3>
-      </div>
-        <span class="hover-content" id="hover-content2">
-          <p>In last 11 years, IYCN has organised campaigns to encourage action, solution-based projects, and events to bring people’s voice together on specific demands for action on climate change.</p>
-        </span>
-	     </div> </a>
-      <a href="./iycnAtCOP.html"> <div  class="photo" onmouseover=" moveUP3() " onmouseout="moveDOWN3()">
-        <img src="./static/cop12.jpg" class="service-img" id="photo3" />
-        <div class="on-photo" id="onPhoto3">
-          <hr width="60px" >
-        <h3>IYCN at COP</h3>
-      </div>
-        <span class="hover-content" id="hover-content3">
-          <p>No matter what happens, in Paris, or Marrakech, or at COP23 or any future COP, our world will be fundamentally altered by the reality that is climate change</p>
-        </span>
-	      </div></a>
+</div>
+<div class="goals" style="background-color: rgb(249, 249, 249) !important  ;">
+    <center><h5 class="text-green">{{ site.data.headings.goal.h5 }}</h5>
+    <h1>{{ site.data.headings.goal.h1 }}</h1>
+    <hr></center>
+    <div class="goals-cards-grid">
+        {% for goal in site.data.goalsData %}
+      <span>
+        <img src={{ goal.imgLink }} class="goalsImg"/>
+        <h4>{{ goal.h4 }}</h4>
+        <p>{{ goal.p }}</p>
+      </span>
+      {% endfor %}
     </div>
-    <div style="position: relative;">
-      <img src="static/counters_bg.jpg" class="countersBg"/>
-      <div class="countersGrid">
-        <span><h1>800+</h1>SCHOOLS</span>
-        <span><h1>100+</h1>ACTIVITIES</span>
-        <span><h1>70+</h1>PROJECTS</span>
-        <span><h1>10000+</h1>VOLUNTEERS</span>
-      </div>
+</div>
+<div style="background-color: white;margin-top:30px">
+    <div class="grid-3-v2">
+    {% for GData in site.data.grid3Data.grid2 %}
+      <span class="grid-3-v2-content">
+        <h1 class="behind-blur">{{ GData.h1 }}</h1>
+        <h3>{{ GData.h3 }}</h3>
+        <hr class="green-hr">
+        <p>{{ GData.p }}</p>
+        <a href = {{ GData.href }} class="text-green">READ MORE <i class="fas fa-arrow-right"></i></a>
+      </span>
+      {% endfor %}
     </div>
-    <div class="goals">
-      <center><h5 class="text-green">We understand the global importance of the</h5>
-      <h1>Sustainable Development Goals</h1>
-      <hr></center>
-      <div class="goals-cards-grid">
-        <span>
-          <img src="./static/4-Quality-education-1024x1024.png" class="goalsImg"/>
-          <h4>Quality Education</h4>
-          <p>Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.</p>
-        </span>
-        <span>
-          <img src="./static/7-Affordable-and-clean-energy-1024x1024.png"  class="goalsImg"/>
-          <h4>Affordable & Clean Energy</h4>
-          <p>Ensure access to affordable, reliable, sustainable and modern energy for all.</p>
-        </span>
-        <span>
-          <img src="./static/13-Climate-action-1024x1024.png" class="goalsImg" />
-          <h4>Climate Action</h4>
-          <p>Take urgent action to combat climate change and its impacts*.</p>
-        </span>
-        <span>
-          <img src="./static/17-Partnerships-for-the-goals-1-1024x1024.png"  class="goalsImg"/>
-          <h4>Partnership For The Goals</h4>
-          <p>Strengthen the means of implementation and revitalize the global partnership for sustainable development.</p>
-        </span>
-        <span>
-          <img src="./static/15-Life-on-land-1024x1024.png" class="goalsImg" />
-          <h4>Life On Land</h4>
-          <p>Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss.</p>
-        </span>
-        <span>
-          <img src="./static/11-Sustainable-cities-and-communities-1024x1024.png" class="goalsImg" />
-          <h4>Sustainable Cities & Communities</h4>
-          <p>Make cities and human settlements inclusive, safe, resilient and sustainable.</p>
-        </span>
-        <span>
-          <img src="./static/12-Responsible-consumption-and-production-1024x1024.png"  class="goalsImg"/>
-          <h4>Responsible Consumption & Production</h4>
-          <p>Ensure sustainable consumption and production patterns.</p>
-        </span>
-        <span>
-          <img src="./static/14-Life-below-water-1024x1024.png"  class="goalsImg"/>
-          <h4>Life Below Water</h4>
-          <p>Conserve and sustainably use the oceans, seas and marine resources for sustainable development.</p>
-        </span>
-      </div>
-    </div>
-    <div>
-      <div class="popup__overlay">
-        <div class="popup"> <a href="#" class="popup__close">X</a> https://developers.google.com/youtube/player_parameters?hl=ru
-          <br/> https://developers.google.com/youtube/iframe_api_reference?hl=ru
-        </div>
-      </div>
-      <div class="popup__overlay">
-        <div class="popup" id="popupVid">
-          <a href="#" class="popup__close">X</a>
-          <!-- <iframe width="640" height="480" src="https://www.youtube.com/embed/TRGoy0XLrUA?showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe> -->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/TKnufs85hXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <div style="background-color: white;margin-top:30px">
-      <div class="grid-3-v2">
-        <span class="grid-3-v2-content">
-          <h1 class="behind-blur">01</h1>
-          <h3>Call for Interns</h3>
-          <hr class="green-hr">
-          <p>Calling all young and passionate people of India to help the humanity achieve some of the toughest goals.</p>
-          <a href = "https://www.internshala.com" class="text-green">READ MORE <i class="fas fa-arrow-right"></i></a>
-        </span>
-        <span class="grid-3-v2-content">
-          <h1 class="behind-blur">02</h1>
-          <h3>Solar Challenge India</h3>
-          <hr class="green-hr">
-          <p>Design, build and drive a solar powered electric vehicle to make an expedition of 3000+ kms from Kerala to Delhi. 
-		Or make another one, like F1 car, which can be tested in a racing track to find the speed limits.</p>
-          <a href = "https://www.suryakranti.org/" class="text-green">READ MORE <i class="fas fa-arrow-right"></i></a>
-        </span>
-        <span class="grid-3-v2-content">
-          <h1 class="behind-blur">03</h1>
-          <h3>HydrometINDIA 2020 - Varysian</h3>
-          <hr class="green-hr">
-          <p>India represents one of the fastest growing hydromet markets in the world. A huge nation with a vast array of regions, weather conditions and uses for cutting 		     edge hydromet advice and technology.</p>
-          <a href = "https://www.varysian.com/hydrometindia-2020" class="text-green">READ MORE <i class="fas fa-arrow-right"></i></a>
-        </span>
-      </div>
-    </div>
+</div>
+<div style="background-color: rgb(249, 249, 249) !important  ;">
     <div class="events" style="padding-top:50px">
       <div class="event-header">
-        <h2>Recent Events</h2>
-	      <a href="./events.html"><h6 style="text-decoration:none; color: #00aa55; "><i class="fas fa-landmark text-green"></i> View All</h6></a>
+        <h2>{{ site.data.headings.event.h2}}</h2>
+        <a href={{ site.data.headings.event.href}} ><h6 style="text-decoration:none; color: #00aa55; "><i class="fas fa-landmark text-green"></i>{{ site.data.headings.event.h6 }}</h6></a>
       </div>
       <hr class="green-hr" style="margin-left:10%" >	
       <div class="my-slider" style="margin-top:-60px">
         <div class="slider-grid" id="slider-grid">
-          <div class="slider-card" id="sc1" onmouseover="overlayWhiteIn1()" onmouseout="overlayWhiteOut1()">
-            
-            <span class="card-overlay"  id="slider-card-1">
-              <p >4th October 2019</p>
-              <h4>Launch of EU-India Youth Climate Conclave</h4>
-              <h6>India Habitat Center, New Delhi</h6>
-              <a href="./indian youth climate conclave.html"><p style="color: #00aa55;" id="rm1">READ MORE <i class="fas fa-arrow-right"></i></p></a>
+            {% for event in site.data.eventsData.index-event %}
+          <div class="slider-card" id={{ event.id }} onmouseover="{{ event.function1 }}" onmouseout= "{{ event.function2 }}"  >
+            <span class="card-overlay"  id= {{ event.id1 }} >
+              <p >{{ event.p }}</p>
+              <h4>{{ event.h4}}</h4>
+              <h6>{{ event.h6}}</h6>
+              <a href={{ event.href }}><p style="" id= {{ event.id2 }} >{{ site.data.headings.event.p }}<i class="fas fa-arrow-right"></i></p></a>
             </span>
           </div>
-          <div class="slider-card" id="sc2" onmouseover="overlayWhiteIn2()" onmouseout="overlayWhiteOut2()">
-            <span class="card-overlay" id="slider-card-2">
-              <p >31st January 2020</p>
-              <h4>Hackathon on Sustainable Development</h4>
-              <h6>Delhi</h6>
-              <a href="./hackVsit.html"><p style="color: #00aa55;" id="rm2">READ MORE <i class="fas fa-arrow-right"></i></p></a>
-            </span>
-          </div>
-          <div class="slider-card" id="sc3" onmouseover="overlayWhiteIn3()" onmouseout="overlayWhiteOut3()">
-
-            <span class="card-overlay" id="slider-card-3">
-              <p>12th JANUARY 2020</p>
-              <h4>Aravalli Calling: Trail Towards Stewardship</h4>
-              <h6>Gurgaon, Haryana</h6>
-              <a href="./arivalli calling.html"><p style="color: #00aa55;" id="rm3">READ MORE <i class="fas fa-arrow-right"></i></p></a>
-            </span>
-          </div>
+          {% endfor %}
         </div>
 
       </div>
     </div>
-       <div class="popup__overlay">
-        <div class="popup"> <a href="#" class="popup__close">X</a> https://developers.google.com/youtube/player_parameters?hl=ru
-          <br/> https://developers.google.com/youtube/iframe_api_reference?hl=ru
-        </div>
-      </div>
-      <div class="popup__overlay">
-        <div class="popup" id="popupVid">
-          <a href="#" class="popup__close">X</a>
-          <!-- <iframe width="640" height="480" src="https://www.youtube.com/embed/TRGoy0XLrUA?showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe> -->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/TKnufs85hXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="left-footer">
-        <div class="left-footer-container">
-          <h5 style="color:white;margin-top: 10px;">Indian Youth Climate Network</h5>
-          <p><i class="fas fa-map-marker-alt text-green"></i> E-37, Basement, Lajpat Nagar III, New Delhi, Delhi</p>
-          <p><i class="fas fa-phone-alt text-green"></i> contact@iycn.in</p>
-          <p><i class="fas fa-clock text-green"></i> Open Hours: Mon - Fri: 9.00 am. - 6.00 pm. </p>
-        </div>
-      </div>
-      <div class="right-footer">
-          <div class="upper-right-footer">
-            <div class="upper-left">
-              <h4 style="color:white;margin-bottom: 20px;">Join Us</h4>
-              <p>As a volunteer</p>
-              <p>As a member</p>
-              <p>As an intern</p>
-              <p>As a full time employee</p>
-              <p>As a partner</p>
-            </div>
-            <div class="upper-right">
-              <h4  style="color:white;margin-bottom: 20px;">Locate us</h4>
-              <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=indian%20youth%20climate%20network&amp;t=m&amp;z=12&amp;output=embed&amp;iwloc=near" aria-label="indian youth climate network"></iframe>
-            </div>
-          </div>
-          <div class="text-gray" style="padding:10px 30px 20px 30px">
-            Copyright © 2020 by <a href="#" style="color:white">Indian Youth Climate Network</a>. All Rights Reserved.
-          </div>
-      </div>
-    </div>
-
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-      <script src="https://kit.fontawesome.com/622856501a.js" crossorigin="anonymous"></script>
-      <script src="./static/index.js" ></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-</html>
-
+  </div>

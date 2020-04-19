@@ -1,136 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Charcha - IYCN Event</title>
-    <link rel="stylesheet" href="./static/css/stylesheet.css" type="text/css">
-    <link rel="stylesheet" href="./static/css/csrt.css" type="text/css">
+---
+layout: default
+title: Climate Charcha
+---
+<link rel="stylesheet" href="./static/css/csrt.css" type="text/css">
     <style>
         .main-box{
-            background-image: url(./static/charcha.jpg);
+            background-image: url(./static/images/charcha.jpg);
             background-repeat: no-repeat;
             background-position: top;
             background-size: cover;
         }
     </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
-<body>
-<!--    <div class="upper-nav">-->
-<!--        <div class="upper-nav-container">-->
-<!--            <p><i class="far fa-clock text-green"></i> Open Hours : Mon - Fri: 9.00 am. - 6.00 pm.</p>-->
-<!--            <p><i class="fas fa-phone-alt text-green"></i> contact@iycn.in</p>-->
-<!--        </div>-->
-<!--    </div>-->
-    <div class="header1">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="./index.html"><img src="./static/theGov_logo.png" class="brand brand1"></a>
-        
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                <a class="nav-link" href="./index.html" style="color:#00A956">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./about.html">About Us</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./history.html">Our History</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Our Team</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Projects
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./agentofchange.html">Agents of Change</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./ruralenergyproject.html">Rural Energy Project</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Climate Solutions Road Tour</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./climateleadership.html">Climate Leadership Program</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./" tabindex="-1" aria-disabled="true">Activities</a>
-                </li>
-                                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    IYCN at COP
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./iycnCOP1.html">Perspective on CoP22</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./iycnCOP2.html">Paris Change Negotiations</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./iycnCOP3.html">THE COP 21 FOR DUMMIES</a>
-                    </div>
-                </li>
-
-            </ul>
-            </div></nav>
-    </div>
     <div class="main-box">
         <div class="main-box-content">
-            <h1>Climate Charcha</h1>
-            <h5><a href="./index.html" style="color: white;">Home</a> / Climate Charcha</h5>
+            <h1>{{ site.data.headings.climate-charcha.h1 }}</h1>
+            <h5><a href= {{ site.data.headings.home-navigator.href }} style="color: white;"> {{ site.data.headings.home-navigator.a }} </a> / {{ site.data.headings.climate-charcha.h1 }}</h5>
         </div>
-    </div>
-    <div class="csrt-container">
+	</div>
+	<div class="csrt-container">
         <div class="csrt-content">
-            <p >Indian Youth Climate Network (IYCN) in collaboration with Centre for Science and Environment (CSE) organised the first Climate Charcha at the CSE Main Office at Tughlakabad, New Delhi on the 29th of June, 2019. 
-                <br><br>The 1st session was an orientation to the CSE report titled, “A Midsummer Nightmare – Decoding the link between comfort, space cooling and energy consumption in a climate-stressed world.” The orientation was given by Mr. Avikal Somvanshi, author of the report andProgramme Manager of the Sustainable Cities Programme, Centre for Science and Environment. The follow up discussion saw active participation from the audience whose interests were piqued by Mr. Avikal’s presentation.
-                <br><br>The 2nd session saw the screening of the documentary titled, “The River and the City: Yamuna in Delhi,” directed by Kartikeya Jain and Satya Ambasta. The film highlights the disconnections between the city of Delhi and river Yamuna. It moves away from the imagination of the river as a sewage canal devoid of any context, and portrays the understandings and experiences of people from different urban riverine communities. The film describes how disconnected imaginations of the river overlooks the understandings of various riverine communities that engage with the Yamuna. The documentary received praise from the audience for its perfect portrayal of plight of the environmentalism of the poorliving along Yamuna. Moreover the documentary opened up to a larger discussion on failed river policies in India. 
-                <br><br>IYCN would like to sincerely thank Avikal Somvanshi for making arrangements for hosting the event at the CSE Main Office in such short notice and in going an extra mile to provide tea, lunch and (of course) lemonades to beat the thermal discomfort. This just shows the strong relationship between CSE and IYCN that has existed ever since three of the founding members of IYCN interned at CSE before they embarked on the IYCN journey in 2007-8. It was quite nostalgic for IYCN as one of its former president Dr. Supriya Singh had also worked at CSE for three years before joining IYCN and one of the first work that IYCN did was with Anumita Roychowdhury on the survey for setting up of the BRT.
-                <br><br>IYCN also would like to thank Miss Agatha Sangma, the Lok Sabha MP from Meghalaya for gracing the event with her presence. Being an environmentalist herself and having interned in the past under the mentorship of India’s green judge Shri. M. C. Mehta, she keenly participated in the group discussions and hopes to table key issues that she noted in the sessions. 
-                <br><br>Last but not the least, IYCN would like to thank all the participants from diverse professions for adding more substance and perspectives to the interactive sessions and showing interestin future associations with the network.
-
+            <p >
+            	{{ site.data.headings.climate-charcha.p}}
             </p>
             <hr class="csrt-hr">
     </div>
-    <div class="footer">
-        <div class="left-footer">
-          <div class="left-footer-container">
-            <h5 style="color:white;margin-top: 10px;">Indian Youth Climate Network</h5>
-            <p><i class="fas fa-map-marker-alt text-green"></i> E-37, Basement, Lajpat Nagar III, New Delhi, Delhi</p>
-            <p><i class="fas fa-phone-alt text-green"></i> contact@iycn.in</p>
-            <p><i class="fas fa-clock text-green"></i> Open Hours: Mon - Fri: 9.00 am. - 6.00 pm. </p>
-          </div>
-        </div>
-        <div class="right-footer">
-            <div class="upper-right-footer">
-              <div class="upper-left">
-                <h4 style="color:white;margin-bottom: 20px;">Join Us</h4>
-                <p>As a volunteer</p>
-                <p>As a member</p>
-                <p>As an intern</p>
-                <p>As a full time employee</p>
-                <p>As a partner</p>
-              </div>
-              <div class="upper-right">
-                <h4  style="color:white;margin-bottom: 20px;">Locate us</h4>
-                <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=indian%20youth%20climate%20network&amp;t=m&amp;z=12&amp;output=embed&amp;iwloc=near" aria-label="indian youth climate network"></iframe>
-              </div>
-            </div>
-            <div class="text-gray" style="padding:10px 30px 20px 30px">
-              Copyright © 2020 by <a href="#" style="color:white">Indian Youth Climate Network</a>. All Rights Reserved.
-            </div>
-        </div>
-      </div>
-    <script src="https://kit.fontawesome.com/622856501a.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-</html>

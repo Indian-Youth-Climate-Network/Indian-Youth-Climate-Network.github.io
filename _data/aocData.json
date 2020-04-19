@@ -1,0 +1,26 @@
+{
+	"content": "Agents of Change (AoC) is one of the flagship programs of IYCN. It aims at imparting knowledge about climate change and engaging youth more effectively in climate negotiations both nationally as well as internationally. It works to generate awareness about and increase youth participation in the way India manages climate change and environment issues.<br><br>The program aims to send a delegation of Indian Young people which will strive to engage government delegations from around the world in policy, help build consensus amongst civil society groups and assist in the construction of a global youth climate network.<br><br>The “Agents of Change” takes the climate movement of the Indian Youth Climate Network from the grassroots to the international arena. COP20 will lay the groundwork for the future of international policy on climate change, and youth, being the largest constituency in the country, must understand and interact more with the civil society and government to make their voices heard. The main aim is to make the youth movement more proactive and informed on climate change and related issues.",
+	"aoc-img": "./static/images/aoc.jpg",
+	"video-data": [
+					{
+						"src": "./static/images/clip-thumb-1.jpg",
+						"h5": "Agents of Change Bangalore",
+						"href": "https://www.youtube.com/watch?v=GlELFdDcQTQ"
+					},
+					{
+						"src": "./static/images/clip-thumb-1.jpg",
+						"h5": "Agents of Change Hyderabad",
+						"href": "https://vimeo.com/104781577"
+					},
+					{
+						"src": "./static/images/clip-thumb-1.jpg",
+						"h5": "Agents of Change Ahmedabad",
+						"href": "https://vimeo.com/107226702"
+					},
+					{
+						"src": "./static/images/clip-thumb-1.jpg",
+						"h5": "Agents of Change Project Video",
+						"href": "https://vimeo.com/114072115"
+					}
+				]
+}
