@@ -1,0 +1,35 @@
+---
+layout: default
+title: Nature Solution Webinar
+---
+<link rel="stylesheet" href="./static/css/csrt.css" type="text/css">
+<style>
+        .main-box{
+            background-image: url("./static/images/nature solutions.jpeg");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+        }
+        .poster{
+            height: 87vh;
+        }
+</style>
+    <div class="main-box">
+        <div class="main-box-content">
+            <h1>{{ site.data.headings.natureSolutionWebinar.h1 }}</h1>
+            <h5><a href={{ site.data.headings.home-navigator.href }} style="color: white;">{{site.data.headings.home-navigator.a }} </a> / {{ site.data.headings.natureSolutionWebinar.h1 }}</h5>
+        </div>
+    </div>
+    <div class="csrt-container">
+        <div class="csrt-content">
+            <h3>{{site.data.headings.natureSolutionWebinar.h11}}</h3>
+            <p>
+                {{site.data.headings.natureSolutionWebinar.p1}}
+            </p>
+            <h3>{{site.data.headings.natureSolutionWebinar.h12}}</h3>
+            <p>{{site.data.headings.natureSolutionWebinar.p2}}</p>
+
+            <p><strong>Registeration Link : </strong><a href={{site.data.headings.natureSolutionWebinar.event-link}} target='_blank'>Click Here</a></p>
+            <p><strong>Date & Time : </strong> {{site.data.headings.natureSolutionWebinar.date-time }} </p>
+            <hr class='csrt-hr'>
+    </div>

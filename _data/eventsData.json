@@ -1,0 +1,95 @@
+{
+"index-event" : [
+    {
+        "p": "4th October 2019",
+        "h4": "Launch of EU-India Youth Climate Conclave",
+        "h6": "India Habitat Center, New Delhi",
+        "href": "./indian-youth-climate-conclave.html",
+        "id": "sc1",
+        "id1": "slider-card-1",
+        "id2": "rm1",
+        "function1": "overlayWhiteIn('slider-card-1' , 'rm1')",
+        "function2": "overlayWhiteOut('slider-card-1' , 'rm1')"
+    },
+    {
+        "p": "12th January 2020",
+        "h4": "Hackathon on Sustainable Development",
+        "h6": "VIPS, Delhi",
+        "href": "./hackVsit.html",
+        "id": "sc2",
+        "id1": "slider-card-2",
+        "id2": "rm2",
+        "function1": "overlayWhiteIn('slider-card-2' , 'rm2')",
+        "function2": "overlayWhiteOut('slider-card-2' , 'rm2')"
+    },
+    {
+        "p": "31st January 2020",
+        "h4": "Aravalli Calling: Trail Towards Stewardship",
+        "h6": "Gurgaon, Haryana",
+        "href": "./arivallicalling.html",
+        "id": "sc3",
+        "id1": "slider-card-3",
+        "id2": "rm3",
+        "function1": "overlayWhiteIn('slider-card-3' , 'rm3')",
+        "function2": "overlayWhiteOut('slider-card-3' , 'rm3')"
+    }
+],
+"event-page" : [
+    {
+        "p": "-",
+        "h4": "'Role of Youth in Behavioural Transitions for Climate Action' - Panel Discussion",
+        "h6": "TERI School of Advanced Studies",
+        "href": "./roleOfYouth.html",
+        "id": "sc5",
+        "id1": "slider-card-5",
+        "id2": "rm5",
+        "function1": "overlayWhiteIn('slider-card-5' , 'rm5')",
+        "function2": "overlayWhiteOut('slider-card-5' , 'rm5')"
+    } ,
+    {
+        "p": "29th June 2019",
+        "h4": "Climate Charcha",
+        "h6": "CSE Main Office at Tughlakabad, New Delhi",
+        "href": "./climateCharcha.html",
+        "id": "sc4",
+        "id1": "slider-card-4",
+        "id2": "rm4",
+        "function1": "overlayWhiteIn('slider-card-4' , 'rm4')",
+        "function2": "overlayWhiteOut('slider-card-4' , 'rm4')"
+    },
+    {
+        "p": "4th October 2019",
+        "h4": "Launch of EU-India Youth Climate Conclave",
+        "h6": "India Habitat Center, New Delhi",
+        "href": "./indian-youth-climate-conclave.html",
+        "id": "sc1",
+        "id1": "slider-card-1",
+        "id2": "rm1",
+        "function1": "overlayWhiteIn('slider-card-1' , 'rm1')",
+        "function2": "overlayWhiteOut('slider-card-1' , 'rm1')"
+    },
+    {
+        "p": "12th January 2020",
+        "h4": "Aravalli Calling: Trail Towards Stewardship",
+        "h6": "Gurgaon, Haryana",
+        "href": "./arivallicalling.html",
+        "id": "sc3",
+        "id1": "slider-card-3",
+        "id2": "rm3",
+        "function1": "overlayWhiteIn('slider-card-3' , 'rm3')",
+        "function2": "overlayWhiteOut('slider-card-3' , 'rm3')"
+    },
+    {
+        "p": "31st January 2020",
+        "h4": "Hackathon on Sustainable Development",
+        "h6": "VIPS, Delhi",
+        "href": "./hackVsit.html",
+        "id": "sc2",
+        "id1": "slider-card-2",
+        "id2": "rm2",
+        "function1": "overlayWhiteIn('slider-card-2' , 'rm2')",
+        "function2": "overlayWhiteOut('slider-card-2' , 'rm2')"
+    }
+    
+]
+}

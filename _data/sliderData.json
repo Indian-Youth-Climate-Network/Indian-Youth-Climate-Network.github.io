@@ -1,0 +1,17 @@
+{
+    "slider1" : {
+        "imgLink": "./static/images/slider-01.jpg" ,
+        "sliderH1": "Youth Engagement" ,
+        "sliderP" : "Establishing a youth presence amongst decision makers"
+    },
+    "slider2" : {
+        "imgLink": "./static/images/slider-02.jpg" ,
+        "sliderH1": "We are Always Open for World" ,
+        "sliderP" : "The world needs leadership on climate change"
+    },
+    "slider3" : {
+        "imgLink": "./static/images/slider-03.jpg" ,
+        "sliderH1": "Climate Leadership Training" ,
+        "sliderP" : "Trainings to young people to develop leadership to be able to take action on climate change"
+    }
+}

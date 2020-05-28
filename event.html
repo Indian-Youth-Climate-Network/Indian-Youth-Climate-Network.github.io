@@ -1,0 +1,48 @@
+---
+layout: default
+title: EVENTS
+---
+<link rel="stylesheet" href="./static/css/event.css" type="text/css">
+<style type="text/css">
+      .card-overlay a{
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+      }
+      .card-overlay p{
+        color: white;
+        font-size: 16px
+      }
+      #sc4{
+        background-image: url("./static/images/NSWPoster.png");
+        background-position:left top;
+      }
+</style>
+<div class="main-box">
+        <div class="main-box-content">
+            <h1>{{ site.data.headings.event.h1 }}</h1>
+            <h5><a href={{ site.data.headings.home-navigator.href }} style="color: white;">Home</a> / {{ site.data.headings.event.h1 }}</h5>
+        </div>
+    </div>
+    <div class="events">
+        <div class="event-header" style="display: block ">
+          <h2>{{ site.data.headings.events.h2 }}</h2>
+		  <hr class="green-hr">	
+        </div>
+        
+        <div class="my-slider">
+          <div class="slider-grid" id="slider-grid">
+            {% for event in site.data.eventData %}
+            <div class="slider-card" id="{{ event.id }}" onmouseover="{{ event.function1 }}" onmouseout="{{ event.function2 }}">
+                <span class="card-overlay" id="{{ event.id1 }}">
+                  <p style="margin-bottom: -4px">{{ event.date }}</p>
+                  <p>{{ event.time }}</p>
+                  <h4>{{ event.h4 }}</h4>
+                  <a href="./natureSolutionWebinar.html"><p style="color: #00aa55;" id="{{ event.id2 }}">READ MORE <i class="fas fa-arrow-right"></i></p></a>
+                </span>
+              </div>
+              
+          {% endfor %}
+        </div>
+        </div>
+      </div>

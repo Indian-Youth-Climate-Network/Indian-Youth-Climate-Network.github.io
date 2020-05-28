@@ -1,0 +1,32 @@
+---
+layout: default
+title: Paris Change Negotiations
+---
+<link rel="stylesheet" href="./static/css/csrt.css" type="text/css">
+<link rel="stylesheet" href="./static/css/cop2.css" type="text/css">
+<div class="main-box">
+        <div class="main-box-content">
+            <h1>{{ site.data.headings.cop2.h1 }}</h1>
+            <h5><a href= {{ site.data.headings.home-navigator.href }} style="color: white;"> {{ site.data.headings.home-navigator.a }} </a> / {{ site.data.headings.cop2.h1 }}</h5>
+        </div>
+	</div>
+	<div class="csrt-container">
+        <div class="csrt-content">
+            <p >{{ site.data.headings.cop2.p1 }}
+             </p>
+             {% for c2Data in site.data.cop2Data %}
+             <div class="cop-flex1">
+                
+                 <div class="cop-flex-img">
+                    <img src= {{ c2Data.src }} class= {{ c2Data.class }} >
+                 </div>
+                 <div class="cop-flex-text">
+                    <p><strong> {{ c2Data.name }} </strong> {{ c2Data.content }} </p>
+                 </div>
+            </div>
+            {% endfor %}
+            
+        <hr class="csrt-hr">
+        
+        </div>
+    </div>

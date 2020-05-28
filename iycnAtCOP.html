@@ -1,0 +1,31 @@
+---
+layout: default
+title: IYCN at COP
+---
+<link rel="stylesheet" href="./static/css/cop.css" type="text/css">
+<div class="main-box">
+        <div class="main-box-content">
+            <h1>{{ site.data.headings.iycnAtCop.h1 }}</h1>
+            <h5><a href= {{ site.data.headings.home-navigator.href }} style="color: white;"> {{ site.data.headings.home-navigator.a }} </a> / {{ site.data.headings.iycnAtCop.h1 }}</h5>
+        </div>
+	</div>
+	<div class="events" >
+        <div class="event-header" style="display: block">
+          <h2>{{ site.data.headings.iycnAtCop.h1 }}</h2>
+          <hr class="green-hr">
+        </div>
+        	
+        <div class="my-slider">
+          <div class="slider-grid" id="slider-grid">
+          	{% for cData in site.data.iycnAtCOPData %}
+              <div class="slider-card">
+                <img src="./static/images/service_02-2.jpg"  width="395" height="450">
+                <span class="card-overlay" id="slider-card-5">
+                    <h4>{{ cData.h4 }}</h4>
+                  <a href={{ cData.href }}><p style="color: #00aa55; display: block" >{{ site.data.headings.event.p }}<i class="fas fa-arrow-right"></i></p></a>
+                </span>
+              </div>
+              {% endfor %}
+        </div>
+        </div>
+      </div>

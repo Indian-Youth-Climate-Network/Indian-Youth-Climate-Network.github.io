@@ -1,0 +1,30 @@
+---
+layout: default
+title: Agents of Change
+---
+<link rel="stylesheet" href="./static/css/aoc.css" type="text/css">
+<div class="main-box">
+        <div class="main-box-content">
+            <h1>{{ site.data.headings.aoc.h1 }}</h1>
+            <h5><a href= {{ site.data.headings.home-navigator.href }} style="color: white;"> {{ site.data.headings.home-navigator.a }} </a> / {{ site.data.headings.aoc.h1 }}</h5>
+        </div>
+</div>
+    <div class="AOCcontainer">
+        <div class="AOC-content">
+            <div class="mid-aoc">
+                <p class="text-gray">{{ site.data.aocData.content }}</p>        
+                <hr class="csrt-hr">
+        </div>
+            <div class="right-aoc">
+                <img src={{ site.data.aocData.aoc-img }} />
+            </div>
+    </div>
+    <div class="clip-grid" >
+    	{% for vData in site.data.aocData.video-data %}
+          <a href={{ vData.href }} target="_blank" ><div class="clip-grid-video">
+            <img class="clip-thumb" src= {{ vData.src }} >
+            <i class="fas fa-play-circle play-button"></i>
+            <h5 class="clip-video-name">{{ vData.h5 }}</h5>
+          </div></a>
+          {% endfor %}
+    </div>

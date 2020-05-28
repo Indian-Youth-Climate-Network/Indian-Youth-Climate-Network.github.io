@@ -1,0 +1,23 @@
+---
+layout: default
+title: About
+---
+<link href="./static/css/about.css" rel="stylesheet" type="text/css" >
+ <div class="main-box">
+        <div class="main-box-content">
+            <h1>{{ site.data.headings.aboutus.h1 }}</h1>
+            <h5><a href= {{ site.data.headings.home-navigator.href }} style="color: white  !important;"> {{ site.data.headings.home-navigator.a }} </a> / {{ site.data.headings.aboutus.h1 }}</h5>
+        </div>
+    </div>
+    <div class="main-about">
+        <dl>
+        	{% for aContent in site.data.aboutData %}
+            <dt>
+                <span class= "logo-back" ><i class="{{ aContent.class }}" ></i></span> {{ aContent.dt-text }}
+            </dt>
+            <dd class="text-gray">
+                {{ aContent.dd-text }} 
+            </dd>
+            {% endfor %}
+        </dl>
+    </div>

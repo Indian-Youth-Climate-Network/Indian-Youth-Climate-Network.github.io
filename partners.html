@@ -1,0 +1,15 @@
+---
+layout : default
+title : Partners of IYCN
+---
+<link href="./static/css/partners.css" rel="stylesheet" type="text/css" >
+<div class="main-box">
+        <div class="main-box-content">
+            <h1>{{ site.data.headings.partners.h1 }}</h1>
+            <h5><a href= {{ site.data.headings.home-navigator.href }} style="color: white  !important;"> {{ site.data.headings.home-navigator.a }} </a> / {{ site.data.headings.partners.h1 }}</h5>
+        </div></div>
+        <div class="partners-grid">
+        	{% for image in site.data.partners.links %}
+        		<img src={{image.imgLink}} class="partners-img" />
+        	{% endfor %}
+    	</div>
