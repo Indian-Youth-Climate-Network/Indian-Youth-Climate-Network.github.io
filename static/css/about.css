@@ -1,0 +1,32 @@
+
+.header{width: 100%;margin: 0;}
+.brand1{width:100%;}
+.main-box{
+    background-color: #232323;
+    height: 360px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    color: white;
+}
+.main-box-content{
+    text-align: center;
+}
+dt{font-size:32px;}
+.logo-back{
+    background-color: #00aa55;
+    color: white;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    padding-bottom: 12px;
+}
+.main-about{
+    padding: 150px;background-color: white;
+}
+
+@media (max-width:1000px){
+    
+    .main-about{padding: 20px;padding-top: 100px;}
+}

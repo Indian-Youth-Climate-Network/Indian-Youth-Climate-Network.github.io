@@ -1,0 +1,86 @@
+.header{width: 100%;margin: 0;}
+.brand1{width:100%;}
+.main-box{
+    background-color: #232323;
+    height: 360px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    color: white;
+}
+.main-box-content{
+    text-align: center;
+}
+.AOC-content{
+    display: flex;
+    width:95%;
+    margin-left: 5%;
+    padding-top:150px
+}
+.AOCcontainer{
+    background-color: white;
+    padding-bottom: 40px;
+}
+.left-aoc{
+    width:20%;
+    padding: 130px 10px;
+}
+.mid-aoc{
+    width:45%;
+    padding:20px 40px;
+    margin-left:40px
+}
+.right-aoc{
+    width:40%;
+}
+.right-aoc img{
+    width:500px;
+    height: 400px;
+    margin-left:60px
+}
+.clip-1-content p{font-size: 24px;}
+.clip-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width:80%;
+  margin-left:15%;
+  margin-bottom: 60px;
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+}
+.clip-thumb{
+  filter: brightness(0.5);
+}
+.clip-grid-video :hover{
+  filter: brightness(0.2);
+}
+.clip-video-name{
+  color: white;
+  position: absolute;
+  bottom:0%;
+  left:10%;
+}
+.clip-grid-video{
+  position: relative;
+}
+.play-button{
+  font-size: 64px;
+  color: #00aa55;
+  position: absolute;
+  left:40%;
+  top:40%;
+}
+
+
+@media (max-width:1000px){
+    .left-aoc{width: 100%; padding: 50px 10px}
+    .AOC-content{display: block;padding-top: 30px;}
+    .mid-aoc{width:100%;margin-left: 0px;}
+    .right-aoc img{margin-left:-10px;width:100%;}
+    .right-aoc{width:100%}
+    .clip-1-flex{display: block;top:5%;}
+    .clip-1-flex i{margin-left: 40%;}
+    .clip-1-photo{height: 400px;}
+    .clip-grid{display: block;width:100%;margin-left:5%;margin-top:80px}
+    .clip-grid-video{width:90%;margin-bottom: 50px;}
+    .clip-thumb{width:100%}
+}
