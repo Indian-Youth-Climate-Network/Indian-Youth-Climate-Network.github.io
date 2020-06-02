@@ -1,0 +1,49 @@
+{
+	"links" : [
+	{
+		"imgLink": "./static/images/Partners/AIESEC.jpg"
+	}
+	,{
+		"imgLink": "./static/images/Partners/BHC.jpg"
+	}
+	,{
+		"imgLink": "./static/images/Partners/CANSA.gif"
+	}
+	,{
+		"imgLink": "./static/images/Partners/CHANGEorg.png"
+	}
+	,{
+		"imgLink": "./static/images/Partners/CSE.jpg"
+	}
+	,{
+		"imgLink": "./static/images/Partners/EDF.png"
+	}
+	,{
+		"imgLink": "./static/images/Partners/FCIK.jpg"
+	}
+	,{
+		"imgLink": "./static/images/Partners/GIZ.jpg"
+	}
+	,{
+		"imgLink": "./static/images/Partners/GoVJ&K.png"
+	}
+	,{
+		"imgLink": "./static/images/Partners/HBF.jpg"
+	}
+	,{
+		"imgLink": "./static/images/Partners/IOFC.png"
+	}
+	,{
+		"imgLink": "./static/images/Partners/MNRE.jpg"
+	}
+	,{
+		"imgLink": "./static/images/Partners/OXFAM.jpg"
+	}
+	,{
+		"imgLink": "./static/images/Partners/WWF.jpg"
+	}
+	,{
+		"imgLink": "./static/images/Partners/YOUNGO.png"
+	}
+]
+}

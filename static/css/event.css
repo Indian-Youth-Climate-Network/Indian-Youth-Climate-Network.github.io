@@ -1,5 +1,5 @@
 .main-box{
-    background-image: url(../event_page-title.jpg);
+    background-image: url(../images/event_page-title.jpg);
     height: 360px;
     padding-top: 120px;
     padding-bottom: 80px;
@@ -9,11 +9,11 @@
     text-align: center;
 }
 #sc4{
-	background-image: url("../charcha.jpg");
+	background-image: url("../images/charcha.jpg");
 	background-position:center
 }
 #sc5{
-	background-image:url("../roleofyouth.jpg");
+	background-image:url("../images/roleofyouth.jpg");
 	background-position: right
 }
 .main-event{
@@ -42,4 +42,4 @@ li span{color: black;}
     width: 100%;
     padding-bottom: 80px;
 }
-#rm4,#rm5{display: none;}
+#rm4,#rm5{display: none !important;}

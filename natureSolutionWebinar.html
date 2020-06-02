@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature's Solution Webinar - IYCN Event</title>
-    <link rel="stylesheet" href="./static/css/stylesheet.css" type="text/css">
-    <link rel="stylesheet" href="./static/css/csrt.css" type="text/css">
-    <style>
+---
+layout: default
+title: Nature Solution Webinar
+---
+<link rel="stylesheet" href="./static/css/csrt.css" type="text/css">
+<style>
         .main-box{
-            background-image: url("./static/nature solutions.jpeg");
+            background-image: url("./static/images/nature solutions.jpeg");
             background-repeat: no-repeat;
             background-position: top;
             background-size: cover;
@@ -16,173 +13,23 @@
         .poster{
             height: 87vh;
         }
-    </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
-<body>
-<!--    <div class="upper-nav">-->
-<!--        <div class="upper-nav-container">-->
-<!--            <p><i class="far fa-clock text-green"></i> Open Hours : Mon - Fri: 9.00 am. - 6.00 pm.</p>-->
-<!--            <p><i class="fas fa-phone-alt text-green"></i> contact@iycn.in</p>-->
-<!--        </div>-->
-<!--    </div>-->
-    <div class="header1">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="./index.html"><img src="./static/theGov_logo.png" class="brand brand1"></a>
-        
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                <a class="nav-link" href="./index.html" style="color:#00A956">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./about.html">About Us</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./history.html">Our History</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Our Team</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Projects
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./agentofchange.html">Agents of Change</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./ruralenergyproject.html">Rural Energy Project</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Climate Solutions Road Tour</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./climateleadership.html">Climate Leadership Program</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./events.html" tabindex="-1" aria-disabled="true">Activities</a>
-                </li>
-                                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    IYCN at COP
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./iycnCOP1.html">Perspective on CoP22</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./iycnCOP2.html">Paris Change Negotiations</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./iycnCOP3.html">THE COP 21 FOR DUMMIES</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./event.html" tabindex="-1" aria-disabled="true">Events</a>
-                </li>
-
-            </ul>
-            </div></nav>
-    </div>
-    <div id="myModal" class="modal fade">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="close" id="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              </div>
-              <div class="modal-body">
-                <img src="./static/nature solutions poster.jpg" class="poster"/>
-              </div>
-          </div>
-      </div>
-  </div>
+</style>
     <div class="main-box">
         <div class="main-box-content">
-            <h1>Webinar on Nature's Solution</h1>
-            <h5><a href="./index.html" style="color: white;">Home</a> / Webinar on Nature's Solution</h5>
+            <h1>{{ site.data.headings.natureSolutionWebinar.h1 }}</h1>
+            <h5><a href={{ site.data.headings.home-navigator.href }} style="color: white;">{{site.data.headings.home-navigator.a }} </a> / {{ site.data.headings.natureSolutionWebinar.h1 }}</h5>
         </div>
     </div>
     <div class="csrt-container">
         <div class="csrt-content">
-            <h3>The Background</h3>
+            <h3>{{site.data.headings.natureSolutionWebinar.h11}}</h3>
             <p>
-                Since the year 2000, as proclaimed by the United Nations, 22<sup>nd</sup> May is observed globally as
-                the <strong>International Day for Biological Diversity (IDB)</strong> to increase understanding and
-                awareness of biodiversity issues. The theme for 2020 is:<br/>
-                <p align="center"><strong>“Our Solutions are in Nature”</strong></p><br/>
-                This emphasises hope, solidarity and the importance of working together at all levels to
-                ensure a just transition towards an Ecological Civilisation: Building a Shared Future for All
-                Life on Earth.
+                {{site.data.headings.natureSolutionWebinar.p1}}
             </p>
-            <h3>Indian Youth Climate Network’s Context</h3>
-            <p>IYCN is taking an anthropocentric approach this year by aligning its activities around the
-            concept of Planetary Health to reach out to the citizens of this country and across with the
-            message, “you cannot expect to live healthy on a sick planet.” Our focus here is on the
-            Nature based Solutions (NbS), thereby ensuring that we take an ecosystem-based approach
-            to meet our goals.<br/><br/>
-            United Religions Initiatives (URI) & IYCN webinar is a story sharing webinar from diverse
-            expertise and contexts covering Art, Policy, Faith, Community led approaches, Indigenous
-            Traditional Knowledge (ITK) and Youth movements.</p>
-            <p><strong>Registeration Link : </strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSeAZtPCHp-KFzM5IlgqSCCFIAZ1ijppA1W-bU-8zJJNYcAvWg/viewform" target="_blank">Click Here</a></p>
-            <p><strong>Date & Time : </strong>22<sup>nd</sup> May, 2020; 6:30 pm to 8:00 pm</p>
-            <hr class="csrt-hr">
-    </div>
-    <div class="footer">
-        <div class="left-footer">
-          <div class="left-footer-container">
-            <h5 style="color:white;margin-top: 10px;">Indian Youth Climate Network</h5>
-            <p><i class="fas fa-map-marker-alt text-green"></i> E-37, Basement, Lajpat Nagar III, New Delhi, Delhi</p>
-            <p><i class="fas fa-phone-alt text-green"></i> contact@iycn.in</p>
-            <p><i class="fas fa-clock text-green"></i> Open Hours: Mon - Fri: 9.00 am. - 6.00 pm. </p>
-          </div>
-        </div>
-        <div class="right-footer">
-            <div class="upper-right-footer">
-              <div class="upper-left">
-                <h4 style="color:white;margin-bottom: 20px;">Join Us</h4>
-                <p>As a volunteer</p>
-                <p>As a member</p>
-                <p>As an intern</p>
-                <p>As a full time employee</p>
-                <p>As a partner</p>
-              </div>
-              <div class="upper-right">
-                <h4  style="color:white;margin-bottom: 20px;">Locate us</h4>
-                <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=indian%20youth%20climate%20network&amp;t=m&amp;z=12&amp;output=embed&amp;iwloc=near" aria-label="indian youth climate network"></iframe>
-              </div>
-            </div>
-            <div class="text-gray" style="padding:10px 30px 20px 30px">
-              Copyright © 2020 by <a href="#" style="color:white">Indian Youth Climate Network</a>. All Rights Reserved.
-            </div>
-        </div>
-      </div>
-      <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+            <h3>{{site.data.headings.natureSolutionWebinar.h12}}</h3>
+            <p>{{site.data.headings.natureSolutionWebinar.p2}}</p>
 
-      <script src="https://kit.fontawesome.com/622856501a.js" crossorigin="anonymous"></script>
-      <script src="./static/index.js" ></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script>
-  $(document).ready(function(){
-    $("#myModal").modal('show');
-  });
-  
- 
-  
-</script>
-<script>
-$(window).resize(function(){
-    if ($(window).width() <= 800){  
-         $("#myModal").modal('hide');
-    }   
-});
-  </script>
-</body>
-</html>
+            <p><strong>Registeration Link : </strong><a href={{site.data.headings.natureSolutionWebinar.event-link}} target='_blank'>Click Here</a></p>
+            <p><strong>Date & Time : </strong> {{site.data.headings.natureSolutionWebinar.date-time }} </p>
+            <hr class='csrt-hr'>
+    </div>

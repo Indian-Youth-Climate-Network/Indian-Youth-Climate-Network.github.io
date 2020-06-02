@@ -1,0 +1,13 @@
+[
+	{
+		"date" : "22nd May, 2020",
+		"time" : "6:30 pm to 8:00 pm",
+		"href" : "./natureSolutionWebinar.html",
+		"h4" : "Webinar on Nature's Solutions - Voices and Experiences",
+        "function1": "overlayWhiteIn('slider-card-4' , 'rm4')",
+        "function2": "overlayWhiteOut('slider-card-4' , 'rm4')",
+        "id": "sc4",
+        "id1": "slider-card-4",
+        "id2": "rm4",
+	}
+]
