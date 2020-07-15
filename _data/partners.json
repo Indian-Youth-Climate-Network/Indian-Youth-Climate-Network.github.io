@@ -44,6 +44,9 @@
 	}
 	,{
 		"imgLink": "./static/images/Partners/YOUNGO.png"
+	},
+	{
+		"imgLink": "./static/images/Partners/ebc.png"
 	}
 ]
 }
