@@ -15,6 +15,11 @@
 }
 @media (max-width: 1000px){
 	.partners-grid{
-		grid-template-columns: 1fr 1fr
+		grid-template-columns: 1fr 1fr;
+		width: 90%;
+		margin-left: 5%
+	}
+	.partners-img{
+		width: 100%
 	}
 }
