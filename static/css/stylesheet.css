@@ -788,4 +788,11 @@ html {
   input[type="button"]:hover {
     background-color: yellowgreen;
   }
+
+.mc-modal {
+    z-index: 9999999999 !important;
+  }
+.mc-modal-bg {
+    z-index: 999999999 !important;
+  }
   
