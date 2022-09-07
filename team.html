@@ -1,0 +1,21 @@
+---
+layout : default
+title : Partners of IYCN
+---
+<link href="./static/css/team.css" rel="stylesheet" type="text/css" >
+<div class="main-box">
+        <div class="main-box-content">
+            <h1>Our Team</h1>
+            <h5><a href= {{ site.data.headings.home-navigator.href }} style="color: white  !important;"> {{ site.data.headings.home-navigator.a }} </a> / Our Team</h5>
+        </div></div>
+        <div class="team-grid">
+        	{% for team in site.data.team %} 
+        		<div class="team-card">
+                    <img src={{team.imgLink}}>
+                    <div class="team-card-content">
+                        <h4>{{team.h4}}</h4>
+                        <h5 class="text-green">{{team.p}}</h5>    
+                    </div>
+                </div>
+        	{% endfor %}
+    	</div>
