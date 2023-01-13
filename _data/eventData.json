@@ -1,13 +1,21 @@
 [
 	{
-		"date" : "22nd May, 2020",
-		"time" : "6:30 pm to 8:00 pm",
-		"href" : "./natureSolutionWebinar.html",
-		"h4" : "Webinar on Nature's Solutions - Voices and Experiences",
-        "function1": "overlayWhiteIn('slider-card-4' , 'rm4')",
-        "function2": "overlayWhiteOut('slider-card-4' , 'rm4')",
-        "id": "sc4",
-        "id1": "slider-card-4",
-        "id2": "rm4",
+		"date" : "13th Jan, 2023",
+		"position" : "Program Manager Research and Evaluation (Health)",
+		"href" : "https://docs.google.com/document/d/1T6AsOzIYK5WGRHBHxY5yVchbQRcU0VgG/edit?usp=sharing&ouid=112582885130837682832&rtpof=true&sd=true",
+		"h4" : "SELCO",
+        "location": "Bangalore, Karnataka",
+		"contact": "simrin@selcofoundation.org",
+		"created_by": "Manish Jain, IYCN"
+	},
+		{
+		"date" : "13th Jan, 2023",
+		"position" : "Program Manager - Research & Evaluation",
+		"href" : "https://docs.google.com/document/d/1T6AsOzIYK5WGRHBHxY5yVchbQRcU0VgG/edit?usp=sharing&ouid=112582885130837682832&rtpof=true&sd=true",
+		"h4" : "SELCO",
+        "location": "Bangalore, Karnataka",
+		"contact": "simrin@selcofoundation.org",
+		"created_by": "Manish Jain, IYCN"
 	}
+
 ]
