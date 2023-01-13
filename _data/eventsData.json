@@ -89,7 +89,8 @@
         "id2": "rm2",
         "function1": "overlayWhiteIn('slider-card-2' , 'rm2')",
         "function2": "overlayWhiteOut('slider-card-2' , 'rm2')"
-    }
+    },
+
     
 ]
 }
