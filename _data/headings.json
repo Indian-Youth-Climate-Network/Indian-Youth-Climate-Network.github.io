@@ -11,7 +11,7 @@
         "h1": "Sustainable Development Goals"
     },
     "event": {
-        "h1": "Events Grid",
+        "h1": "Job Board",
         "h2": "Recent Events",
         "href": "./events.html",
         "h6": "View All",
@@ -93,7 +93,7 @@
     },
     "events" :{
         "h1" : "Events",
-        "h2" : "Our Events"
+        "h2" : "Jobs"
     },
     "history" :{
         "h1" : "Our History",
