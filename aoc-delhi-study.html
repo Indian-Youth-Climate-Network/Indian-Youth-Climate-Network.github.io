@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .pdf-list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .pdf-item {
+        width: 20%;
+        text-align: center;
+        margin: 1%;
+      }
+      .pdf-preview {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>List of PDF Files</h2>
+    <div class="pdf-list">
+      <!-- Replace the URLs with actual PDF file URLs -->
+      <div class="pdf-item">
+        <object data="./static/files/aoc_delhi_files/CE innovation and start-up – Mr Ankur Kumar ,Co-founder & CEO, Kriya Labs.pdf" type="application/pdf" class="pdf-preview"></object>
+        <br>
+        <a href="https://example.com/file1.pdf" download>Download</a>
+      </div>
+      <div class="pdf-item">
+        <object data="./static/files/aoc_delhi_files/Circular Economy and Resource Efficiency Policies in EU and the world – Mr Anshul Jain, Founder, Nordic Consult.pdf" type="application/pdf" class="pdf-preview"></object>
+        <br>
+        <a href="https://example.com/file2.pdf" download>Download</a>
+      </div>
+    </div>
+  </body>
+</html>
